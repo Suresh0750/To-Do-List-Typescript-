@@ -33,8 +33,8 @@ function App() {
           {/* <button className='bg-gray-700 w-full p-2'></button> */}
           <Button className="btn-4" >Add </Button>
         </form>
-        <div className='bg-gray-500 h-52 overflow-y-auto'>
-        <Itemslist items={items} setItems={setItems}  />
+        <div className={ items.length>=4 ? 'bg-gray-500 h-52 overflow-y-auto': 'h-52'}>
+            <Itemslist items={items} setItems={setItems}  />
         </div>
     </div>
     </div>

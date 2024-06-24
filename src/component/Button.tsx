@@ -10,7 +10,7 @@ interface btn {
 const Button = ({children,className,onClick}:btn) => {
     console.log(`btn class`,className)
   return (
-    <button type = "submit" class={className} onClick={onClick}><span>{children}</span></button>
+    <button type = "submit" className={className} onClick={onClick}><span>{children}</span></button>
   )
 }
 
